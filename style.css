@@ -12,7 +12,7 @@ body {
 header {
   background-color: #007bff;
   color: #fff;
-  padding: 30px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -24,20 +24,24 @@ header h1 {
 header p {
   margin-top: 10px;
   font-size: 1em;
+  font-weight: 400;
 }
 
 /* Sections */
 section {
-  padding: 20px;
-  margin: 10px;
+  padding: 25px 20px;
+  margin: 15px 10px;
   background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 section h2 {
   color: #007bff;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #007bff;
+  display: inline-block;
+  padding-bottom: 5px;
 }
 
 ul {
@@ -46,7 +50,7 @@ ul {
 }
 
 ul li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-size: 1em;
 }
 
@@ -54,10 +58,12 @@ ul li {
 a {
   color: #007bff;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
   text-decoration: underline;
+  color: #0056b3;
 }
 
 /* Footer */
@@ -67,12 +73,13 @@ footer {
   background-color: #333;
   color: #fff;
   margin-top: 20px;
+  font-size: 0.9em;
 }
 
-/* Responsive Text */
+/* Responsive Text & Layout */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   header p {
@@ -80,7 +87,11 @@ footer {
   }
 
   section {
-    padding: 15px;
-    margin: 8px;
+    padding: 20px 15px;
+    margin: 10px 5px;
+  }
+
+  ul li {
+    font-size: 0.95em;
   }
 }
