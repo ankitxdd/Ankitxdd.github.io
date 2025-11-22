@@ -1,94 +1,111 @@
-/* General Styles */
+  /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background: #f0f2f5;
   color: #333;
 }
 
 /* Header */
 header {
-  background-color: #007bff;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
   color: #fff;
-  padding: 40px 20px;
+  padding: 50px 20px;
   text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 header p {
   margin-top: 10px;
-  font-size: 1em;
+  font-size: 1.1em;
   font-weight: 400;
 }
 
 /* Sections */
 section {
-  padding: 25px 20px;
-  margin: 15px 10px;
+  padding: 30px 25px;
+  margin: 20px 15px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+section:hover {
+  transform: translateY(-3px);
 }
 
 section h2 {
-  color: #007bff;
-  margin-bottom: 12px;
-  border-bottom: 2px solid #007bff;
+  color: #2575fc;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #6a11cb;
   display: inline-block;
   padding-bottom: 5px;
+  font-size: 1.5em;
 }
 
+/* Lists */
 ul {
   list-style-type: disc;
-  padding-left: 20px;
+  padding-left: 25px;
 }
 
 ul li {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 1em;
+  color: #555;
 }
 
 /* Links */
 a {
-  color: #007bff;
+  color: #6a11cb;
+  font-weight: 500;
   text-decoration: none;
   transition: 0.3s;
 }
 
 a:hover {
+  color: #2575fc;
   text-decoration: underline;
-  color: #0056b3;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 15px;
-  background-color: #333;
+  padding: 20px;
+  background-color: #2575fc;
   color: #fff;
-  margin-top: 20px;
   font-size: 0.9em;
+  margin-top: 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-/* Responsive Text & Layout */
+/* Responsive Design */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.6em;
+    font-size: 1.8em;
   }
 
   header p {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 
   section {
     padding: 20px 15px;
-    margin: 10px 5px;
+    margin: 12px 8px;
+  }
+
+  section h2 {
+    font-size: 1.3em;
   }
 
   ul li {
